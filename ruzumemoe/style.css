@@ -1,11 +1,27 @@
+/* :root  */
+:root {
+  --main-color-yellow: #ffea00;
+  --main-color-blue: #50c0f0;
+  --collor-wite: #ffffff;
+  --background-color: #161616;
+}
 body {
-  /* font-family: "Actor", sans-serif; */
-  font-family: "Fredoka One", cursive;
-  /* font-family: "Kaushan Script", cursive; */
+  font-family: "Actor", sans-serif;
+  /* font-family: "Fredoka One", cursive, sans-serif; */
+  /* font-family: "Kaushan Script", cursive, sans-serif; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   /* background-color: black; */
+  background-color: var(--background-color);
+  color: var(--main-color-yellow);
+}
+li {
+  list-style: none;
+}
+.link {
+  color: var(--main-color-yellow);
+  text-decoration: none;
 }
 
 footer {
