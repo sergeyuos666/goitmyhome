@@ -7,24 +7,41 @@
   --phon-email-second-color: #b9b4b4;
 }
 
+/* standart  */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  max-width: 638px;
   margin: 0 auto;
+  max-width: 700px;
+  max-height: 750px;
 
   font-family: 'Fredoka One', cursive, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.21;
+  background-color: var(--background-color);
   color: var(--main-color-yellow);
 
-  background-color: var(--background-color);
-  background: url(./img/i.jpg), no-repeat fixed;
-  background-size: cover;
   text-shadow: black 1px 0px, black 1px 1px, black 0px 1px, black -1px 1px, black -1px 0px,
     black -1px -1px, black 0px -1px, black 1px -1px;
+  background-color: var(--background-color);
+  background-image: url(./img/i.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 700px 750px; /* 860px 900px */
   /* background-position: */
 }
+main {
+}
+
 li {
   list-style: none;
 }
@@ -36,6 +53,10 @@ li {
 footer {
   border-top: 1px dashed #393939;
   font-family: 'Actor', sans-serif;
+}
+
+main {
+  margin: 0 auto;
 }
 
 /* Index-html */
@@ -75,10 +96,15 @@ footer {
 
 /* main content  */
 /* hero section */
-.hero {
+/* .hero {
+  
+} */
+
+.hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 35px;
 }
 .lists-hero-btn {
   display: flex;
@@ -102,9 +128,16 @@ footer {
   color: var(--main-color-yellow);
 }
 
+.main-nav {
+  margin-top: 290px;
+  padding-left: 30px;
+}
+
 .main-nav-lists {
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .nav-list:not(:last-child) {
@@ -116,18 +149,36 @@ footer {
 }
 
 /* footer */
-/* font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.21;
-  color: var(--main-color-yellow); */
-
-.address-lists {
+footer {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.21;
   color: var(--main-color-yellow);
+  background-color: #393939;
+}
+
+.address-lists {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 0;
+  margin-left: 150px;
+  margin-bottom: 0;
+
+  padding-bottom: 0px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.21;
+  color: var(--main-color-yellow);
+}
+
+.address-list.email {
+  margin-left: 200px;
+  padding-bottom: 20px;
+  margin-right: 10px;
 }
 
 .phone-link,
@@ -160,7 +211,28 @@ footer {
 
 .social-link {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.name-social {
+  font-size: 16px;
+  line-height: 1.21;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1px;
+}
+
+/* about me  */
+
+.nav-second-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 0;
 }
